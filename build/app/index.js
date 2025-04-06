@@ -26,6 +26,7 @@ function initServer() {
         const app = (0, express_1.default)();
         app.use(body_parser_1.default.json());
         app.use((0, cors_1.default)());
+        app.get('/', (req, res) => res.status(200).send('Everything is working'));
         const graphqlServer = new server_1.ApolloServer({
             typeDefs: `
             ${user_1.User.types}
