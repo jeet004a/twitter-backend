@@ -6,4 +6,6 @@ exports.queries = `#grapgql
 
     getCurrentUser:User
 
+    getUserById(id: ID!): User
+
 `;

@@ -3,4 +3,6 @@ export const queries=`#grapgql
 
     getCurrentUser:User
 
+    getUserById(id: ID!): User
+
 `
